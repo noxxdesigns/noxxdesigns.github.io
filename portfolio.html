@@ -8,19 +8,18 @@ layout: default
 
 	<div class="row mt">
 		<div class="col-lg-6 col-lg-offset-3 centered">
-			<h3>MY WORK</h3>
+			<h3>MY PORTFOLIO</h3>
 			<hr>
-			<p>Show your work here. Dribbble shots from the awesome designer <a href="http://dribbble.com/wanderingbert">David Creighton-Pester</a>.</p>
 		</div>
 	</div>
 	
-	{% for work in site.work %}
-		{% if work.published == true %}
+	{% for portfolio in site.portfolio %}
+		{% if portfolio.published == true %}
 			{% cycle 'add rows': '<div class="row mt centered">', nil, nil %}
 		
 				<div class="col-lg-4">
-					<a class="zoom green" href="{{ work.url | prepend: site.baseurl }}"><img class="img-responsive" src="{{ work.img }}" alt="" /></a>
-					<p>{{ work.title }}</p>
+					<a class="zoom green" href="{{ portfolio.url | prepend: site.baseurl }}"><img class="img-responsive" src="{{ portfolio.img }}" alt="" /></a>
+					<p>{{ portfolio.title }}</p>
 				</div>
 			
 			{% cycle 'close rows': nil, nil, '</div>' %}

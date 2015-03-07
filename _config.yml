@@ -1,9 +1,10 @@
 # Site settings
 title: noxxdesigns
 email: noxxadam@gmail.com
-description: "A graphic designer."
+description: "I am a graphic designer."
 baseurl: ""
 url: "http://noxxdesigns.github.io"
+author: "Equinoxx"
 
 # Build settings
 markdown: kramdown
@@ -11,7 +12,7 @@ permalink: pretty
 
 # Add custom collections
 collections:
-  work:
+  portfolio:
     output: true
 
 # Set defaults
@@ -28,7 +29,7 @@ defaults:
       type: "post"
     values:
       layout: "post"    
-      author: "Equinoxx"
+      author: ""
       date: ""
       title: ""
       category: ""
