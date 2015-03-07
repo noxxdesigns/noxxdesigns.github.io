@@ -1,0 +1,36 @@
+# Site settings
+title: noxxdesigns
+email: noxxadam@gmail.com
+description: "A graphic designer."
+baseurl: ""
+url: "http://noxxdesigns.github.io"
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+# Add custom collections
+collections:
+  work:
+    output: true
+
+# Set defaults
+defaults:
+  -
+    scope:
+      path: ""
+      type: "page"
+    values:
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: "post"
+    values:
+      layout: "post"    
+      author: "Equinoxx"
+      date: ""
+      title: ""
+      category: ""
+      tags: ""
+      
